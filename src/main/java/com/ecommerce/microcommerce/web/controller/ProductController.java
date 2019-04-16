@@ -69,7 +69,7 @@ public class ProductController {
     //ajouter un produit
     @PostMapping(value = "/Produits")
 
-    public ResponseEntity<Void> ajouterProduit(@Valid @RequestBody Product product) {
+    public ResponseEntity<Void> ajouterProduit(/*@Valid*/ @RequestBody Product product) {
 
         if (product.getPrix() == 0) {
             throw new ProduitGratuitException("Le produit est GRATUIT!!! Il ne peut pas être ajouter, saisissez un prix");
