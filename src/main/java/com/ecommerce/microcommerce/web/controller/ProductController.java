@@ -118,4 +118,13 @@ public class ProductController {
         return marges;
     }
 
+    // Récupérer tout les produits par ordre alphabétique
+    @RequestMapping(value = "/ProduitsAlph", method = RequestMethod.GET)
+    public MappingJacksonValue trierProduitsParOrdreAlphabetique() {
+
+        Iterable<Product> produits = productDao.findByOrderByNom();
+        return new MappingJacksonValue(produits);
+
+    }
+
 }
