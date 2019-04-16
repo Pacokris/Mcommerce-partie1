@@ -50,3 +50,5 @@ Dans Postman, créez une collection pour définir vos tests
 Faites une capture d'écran du résultat de l'exécution de la collection
 Exportez la collection au format JSON  dans le dossier  TestsPostman
 Commitez et poussez vers le dépôt GitHub
+
+GitHub du projet: https://github.com/Pacokris/Mcommerce-partie1
