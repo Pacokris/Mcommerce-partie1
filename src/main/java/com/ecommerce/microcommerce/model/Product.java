@@ -30,7 +30,7 @@ public class Product {
     }
 
     //constructeur pour nos tests
-    public Product(int id, String nom, int prix, int prixAchat) {
+    public Product(int id, String nom, int prix, int prixAchat, int marge) {
         this.id = id;
         this.nom = nom;
         this.prix = prix;
